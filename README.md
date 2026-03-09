@@ -10,33 +10,36 @@
 
 **Ethical Excellence:** A core part of this project was developing an ethical framework. I audited the model for bias and ensured that the "human" remained in Human Resources, using the AI as a support tool for employee well-being rather than a decision-maker for termination.
 
-🚀 How to Run This Project
+## 🚀 How to Run This Project
 To replicate this analysis on your local machine, follow these steps:
 
-1. Prerequisites
+1. **Prerequisites**
 Ensure you have Python 3.9+ installed. I recommend using a virtual environment to avoid dependency conflicts.
 
-2. Installation
+2. **Installation**
 Clone the repository and install the required libraries:
-
-git clone https://github.com/yourusername/salifort-motors-retention.git
+```
+git clone https://github.com/segmur/Predictive-Retention-Modeling-Project.git
 cd salifort-motors-retention
 pip install -r requirements.txt
+```
 
-3. Environment Setup
+3. **Environment Setup**
 If you are using Jupyter Notebook or VS Code, ensure your kernel is set to the environment where these packages are installed.
 
-4. Dependencies (requirements.txt)
+4. **Dependencies (requirements.txt)**
 Create a file named requirements.txt in your root folder with the following content:
 
+```
 pandas>=2.0.0
 numpy>=1.24.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
 scikit-learn>=1.2.0
 jupyter>=1.0.0
+```
 
-🛠️ Troubleshooting Notes
+## 🛠️Troubleshooting Notes
 During development, I documented and resolved two critical environment-specific issues:
 
 **Correlation Errors:** Fixed a ValueError in df.corr() by explicitly setting numeric_only=True to handle categorical "Sales" and "Salary" columns.
